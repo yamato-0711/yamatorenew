@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+    width: 280px;
+    font-family: 'Caveat', cursive;
+    color: black;
+    font-size: 70px;
+}
+
+.fadein1{
+    opacity : 0;
+    transform : translate(0, 200px);
+    transition : all 1600ms;
+}
+
+            /* .fadein2{
+                opacity : 0.1;
+                transform : translate(-200px, 200px);
+                transition : all 500ms;
+            } */
+
+.fadein1.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+/* .fadein2.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+} */
+
+header nav{
+    width: 100%;
+    height: 80px;
+    background-color: beige;
+    font-family: 'Caveat', cursive;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a,li{
+    display: inline;
+    text-decoration: none;
+    color: rgba(22, 3, 3, 0.644);
+}
+
+nav > a{
+    font-size: 35px;
+    margin: 0 50px;
+    color: rgba(22, 3, 3, 0.644);
+}
+
+nav li{
+    margin-right: 40px;
+    font-size: 18px;
+    color: rgba(22, 3, 3, 0.644);
+}
+
+.article-header-container{
+    width: 100%;
+    height: 600px;
+    /* background-image: url(./images/map.jpeg); */
+    background: url(./images/map.jpeg) center center;
+    background-size: cover;
+    display: flex;
+}
+
+
+/* .container {
+    height: 100vh;
+    background: url(./images/map.jpeg) center center;
+    background-size: cover;
+} */
+
+.header{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: beige;
+}
+
+.header p{
+    font-size: 45px;
+}
+
+.header h1{
+    font-size: 20px;
+}
+
+#profile{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    background-color: beige;
+    background-image: url(images/kore3.jpeg);
+    background-size: cover;
+}
+
+.text-center{
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.background{
+    background-color: #f8f8f8b2;
+    border-radius: 3%;
+    padding: 5px;
+}
+
+.section-header h2{
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+.section h2:before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /*下線の上下位置調整*/
+    display: inline-block;
+    width: 50px; /*下線の幅*/
+    height: 2px; /*下線の太さ*/
+    transform: translate(-50%); /*位置調整*/
+    background-color: #666666; /*下線の色*/
+  }
+
+.section-header h2:first-letter{
+    color: #336600;
+}
+
+.section-header p{
+    font-size: 20px;
+}
+
+
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+
+.profile-container img{
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: solid 0px rgba(114, 6, 105, 0.856);
+}
+
+.my_photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: none;
+}
+
+
+
+.profile-container div{
+    width: 300px;
+    height: 210px;
+}
+
+
+#selfpr{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-image: url(images/black-ball-point-pen-with-brown-spiral-notebook-733852.jpg);
+    background-size: cover
+}
+
+.selfpr-container{
+   display: flex;
+   flex-direction: row;
+}
+
+.selfpr-container div{
+    /* border: 1px solid white; */
+    width: 200px;
+    height: 300px;
+    margin: 10px 30px;
+    padding: 30px 30px;
+    background-color: rgba(192, 181, 181, 0.6)
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+table{
+    border-spacing: 10px;
+    margin: auto;
+    padding-top: 30px;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#vision{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: beige;
+    background-image: url(images/colorful.jpeg);
+    background-size: cover;
+}
+
+.vision-content h3{
+    font-size: 25px;
+    color: rgb(1, 95, 153);
+}
+
+.vision-content{
+    color: white;
+}
+
+.message{
+    position: absolute;
+    font-size: 60px;
+    color: rgba(114, 6, 105, 0.856);
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    text-shadow:5px 5px 0 beige, -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+    0px 1px 0 #FFF,  0-1px 0 #FFF,
+    -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color:  beige;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-content a{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid rgb(10, 0, 0);
+    padding: -20px;
+    border-radius: 20%;
+}
+
+
+
