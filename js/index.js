@@ -40,17 +40,18 @@ $(function () {
 
     var duration = 300;
 
-    $('.profile-container img')
+    $('.circle-border')
         .on('mouseover', function () {
-            $('.profile-container img').stop(true).animate({
+            $(this).stop(true).animate({
                 borderWidth: '12px'
+
             },
                 duration, 'easeOutSine');
         })
         .on('mouseout', function () {
-            $('.profile-container img').stop(true).animate({
+            $(this).stop(true).animate({
                 borderWidth: '0px',
-                color: '#ae5e9b'
+                color: 'black'
             },
                 duration, 'easeOutSine');
         })
@@ -118,3 +119,59 @@ $(function () {
         });
     });
 });
+
+//pagetopのやつ
+$(document).ready(function () {
+
+    var pagetop = $('.pagetop');
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() > 100) {
+
+            pagetop.fadeIn();
+
+        } else {
+
+            pagetop.fadeOut();
+
+        }
+
+    });
+
+    pagetop.click(function () {
+
+        $('body, html').animate({ scrollTop: 0 }, 500);
+
+        return false;
+    });
+
+});
+
+$(document).ready(function () {
+
+    var pagetop = $('.footer-content');
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() > 100) {
+
+            pagetop.fadeIn();
+
+        } else {
+
+            pagetop.fadeOut();
+
+        }
+
+    });
+
+    pagetop.click(function () {
+
+        $('body, html').animate({ scrollTop: 0 }, 500);
+
+        return false;
+    });
+
+});
+
