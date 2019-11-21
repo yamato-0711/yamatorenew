@@ -47,7 +47,9 @@
     opacity : 1;
     transform : translate(0, 0);
 } */
-
+.nav_header{
+    width: 100%;
+}
 header nav{
     width: 100%;
     height: 80px;
@@ -60,7 +62,13 @@ header nav{
     position: fixed;
     z-index: 10;
 }
-
+nav{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
 nav a,li{
     display: inline;
     text-decoration: none;
@@ -115,7 +123,9 @@ nav a:hover{
 .header h1{
     font-size: 20px;
 }
-
+main{
+    width: 100%;
+}
 #profile{
     width: 100%;
     height: 560px;
@@ -362,15 +372,44 @@ footer{
     
     }
     
+    @media screen and (max-width: 1024px) {
+        .selfpr-container{
+            flex-direction: column; 
+        }
+        #selfpr{
+            height: 100%; 
+            
+        }
+    }
     @media screen and (max-width: 765px){
-        .nav{
-            height: 100x;
+        .start p {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            z-index: 9999;
+            width: 280px;
+            font-family: 'Caveat', cursive;
+            color: black;
+            font-size: 50px;
+        }
+        header nav{
             width: 100%;
         }
-        .nev ul{
+        nav > a{
+            font-size: 25px;
+            margin: 0 0 0 20px;
+            color: rgba(22, 3, 3, 0.644);
+        }
+        nav li{
+            margin: 4px 30px 0 0;
+            font-size: 10px;
+            color: rgba(22, 3, 3, 0.644);
+        }
+        nav ul{
             display: flex;
             flex-direction: column;
-            font-size: 5px;
         }
         .profile-container{
             flex-direction: column;
@@ -381,6 +420,15 @@ footer{
         .my_photo img{
             margin: 0;
         }
+        .selfpr-container div{
+            /* border: 1px solid white; */
+            width: 250px;
+            height: 250px;
+            margin: 15px 0;
+            padding: 20px 30px 43px; 
+            background-color: rgba(192, 181, 181, 0.6)
+        }
+        
         #vision{
             height: 100%;  
         }
@@ -391,22 +439,30 @@ footer{
         .pagetop{
             right: 10px;
         }
-        .message p{
-            font-size: 30px;
+        .message{
+            position: absolute;
+            font-size: 28px;
+            color: rgba(114, 6, 105, 0.856);
             bottom: -10px;
+            left: 0;
+            right: 0;
+            text-shadow:5px 5px 0 beige, -1px -1px 0 #FFF,
+            -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+            0px 1px 0 #FFF,  0-1px 0 #FFF,
+            -1px 0 0 #FFF, 1px 0 0 #FFF;
+        }
+        .footer-content a{
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border: 1px solid rgb(10, 0, 0);
+            padding: -20px;
+            border-radius: 20%;
         }
     }
         
 
-    @media screen and (max-width: 1024px) and (orientation: portrait) {
-        .selfpr-container{
-            flex-direction: column; 
-        }
-        #selfpr{
-            height: 100%; 
-            
-        }
-    }
+  
         
           
    
