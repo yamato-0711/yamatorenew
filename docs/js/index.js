@@ -59,50 +59,53 @@ $(function () {
 
 $(function () {
 
-    var duration = 400;
+    var duration = 300;
 
-    $('nav')
+    $('.nav li>a')
         .on('mouseover', function () {
-            $(this).stop(true).animate({
-                height: '120px'
-            },
-                duration
-            );
-            $('nav>a').stop(true).animate({
-                fontSize: '50px'
-            },
-                duration
-            );
-            $('nav li').stop(true).animate({
-                fontSize: '25px'
-            },
-                duration
-            );
-        })
-        .on('mouseout', function () {
-            $(this).stop(true).animate({
-                height: '80px'
-            },
-                duration
-            );
-            $('nav>a').stop(true).animate({
-                fontSize: '35px'
-            },
-                duration
-            );
-            $('nav li').stop(true).animate({
-                fontSize: '18px'
-            },
-                duration
-            );
-        })
-    $('li')
-        .on('mouseover', function () {
-            $(this).stop(true).animate({
+            $(this).css({
                 color: 'red'
             });
         })
-})
+        .on('mouseout', function () {
+            $(this).css({
+                color: 'white'
+            });
+        })
+});
+
+//navの高さ変更するjquery
+// $(function () {
+
+//     var duration = 400;
+
+//     $('nav li>a')
+//         .on('mouseover', function () {
+//             // $(this).stop(true).animate({
+//             //     height: '120px',
+//             //     color: 'red'
+//             // },
+//             //     duration
+//             // );
+//             $(this).stop(true).animate({
+//                 fontSize: '40px'
+//             },
+//                 duration
+//             );
+//             // $(this).stop(true).animate({
+//             //     fontSize: '25px'
+//             // },
+//             //     duration
+//             // );
+//         })
+//         .on('mouseout', function () {
+//             $(this).stop(true).animate({
+//                 height: '25px'
+//             },
+//                 duration
+//             );
+//         });
+// });
 
 
 

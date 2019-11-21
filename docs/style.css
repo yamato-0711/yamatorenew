@@ -79,6 +79,10 @@ nav li{
     color: rgba(22, 3, 3, 0.644);
 }
 
+nav a:hover{
+    color: rgba(147, 145, 153, 0.904);
+}
+
 .article-header-container{
     width: 100%;
     height: 600px;
@@ -166,7 +170,7 @@ nav li{
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
-    
+    box-sizing: border-box;
 }
 
 
@@ -176,6 +180,7 @@ nav li{
     margin-right: 20px;
     border-radius: 50%;
     border: solid 0px rgba(114, 6, 105, 0.856);
+    box-sizing: border-box;
     
 }
 
@@ -184,11 +189,13 @@ nav li{
     height: 300px;
     border-radius: 50%;
     border: none;
+    box-sizing: border-box;
 }
 
 .profile-container div{
     width: 300px;
-    height: 210px;
+    height: 300px;
+    box-sizing: border-box;
 }
 
 
@@ -198,7 +205,7 @@ nav li{
     display: flex;
     background-image: url(./images/black-ball-point-pen-with-brown-spiral-notebook-733852.jpg);
     background-size: cover;
-	z-index:0;
+    z-index:0;
 }
 
 .selfpr-container{
@@ -221,7 +228,6 @@ nav li{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    
 }
 
 .circle h3{
@@ -231,7 +237,8 @@ nav li{
     margin: 0 auto;
 }
 .circle p{
-	margin: 5px;
+    margin: 5px;
+    font-size: 10px;
 }
 
 table{
@@ -355,3 +362,51 @@ footer{
     
     }
     
+    @media screen and (max-width: 765px){
+        .nav{
+            height: 100x;
+            width: 100%;
+        }
+        .nev ul{
+            display: flex;
+            flex-direction: column;
+            font-size: 5px;
+        }
+        .profile-container{
+            flex-direction: column;
+        }
+        #profile{
+            height: 100%;
+        }
+        .my_photo img{
+            margin: 0;
+        }
+        #vision{
+            height: 100%;  
+        }
+        .vision-content{
+            width: 80%;
+            margin: auto;
+        }
+        .pagetop{
+            right: 10px;
+        }
+        .message p{
+            font-size: 30px;
+            bottom: -10px;
+        }
+    }
+        
+
+    @media screen and (max-width: 1024px) and (orientation: portrait) {
+        .selfpr-container{
+            flex-direction: column; 
+        }
+        #selfpr{
+            height: 100%; 
+            
+        }
+    }
+        
+          
+   
